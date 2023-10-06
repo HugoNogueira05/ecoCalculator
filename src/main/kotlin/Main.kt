@@ -1,6 +1,4 @@
 import java.text.DecimalFormat
-import kotlin.math.round
-
 fun main() {
     println("Welcome to the EcoCalculator!")
     println("Type 1 if your car runs on Gasoline, type 2 if your car runs on Diesel and type 3 if your car is electric:")
