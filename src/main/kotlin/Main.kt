@@ -19,7 +19,7 @@ fun main() {
 
     } else if (carType == "3") {
         println("Good Job! You are already Eco-Friendly!")
-        val electricPrice = df.format(distanceKm *0.0025 * 6.94)
+        val electricPrice = df.format(distanceKm *0.0025 * 24)
         print("In that trip you spent a total of $electricPrice €")
     } else {
         print("Error, please choose one of the 3 options available")
@@ -28,7 +28,7 @@ fun main() {
 fun savings(gasPrice: Double, distanceKm: Int, averageConsumption: Float): Float {
     val fuelNeeded = (distanceKm*0.01)*averageConsumption
     val moneyNeeded = fuelNeeded * gasPrice
-    val electricPrice = (distanceKm *0.0025)* 6.94
+    val electricPrice = (distanceKm *0.0025)* 24
     val saved = (moneyNeeded - electricPrice).toFloat()
     return saved
 }
